@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sabanet</title>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link rel="stylesheet" href="login.css" media="screen">
+  <script src="https://kit.fontawesome.com/08a019fda4.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/jpg" href="saba.ico" />
+  <script src="js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+
+
+<center>
+
+  <body>
+
+
+    <div id="head"></div>
+
+    <div class='encabezado'> </div>
+
+    <div id="boxxsabanet">
+      <div id="userdiv"> </div>
+    </div>
+
+    <!-- BANNER DINAMICO (CONTENIDO EN EL CSS)-->
+    <div class="banner"></div>
+
+    <!-- CUERPO DE LA PAGINA-->
+
+    <!-- VALIDACIONES JS (NO MODIFICAR)-->
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post">
+      <input type="hidden" name="username" />
+      <input type="hidden" name="password" />
+      <input type="hidden" name="dst" value="$(link-orig)" />
+      <input type="hidden" name="popup" value="true" />
+    </form>
+
+    <script type="text/javascript" src="md5.js"></script>
+
+
+    <script type="text/javascript">
+      function doLogin() {
+        document.sendin.username.value = document.login.username.value;
+        document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+        document.sendin.submit();
+        return false;
+      }
+    </script>
+    $(endif)
+
+
+
+
+    <form class="vertical-form" name="login" action="$(link-login-only)" method="post" background="#B21C1C" $(if
+      chap-id) onSubmit="doLogin()" $(endif)>
+      <input type="hidden" name="dst" value="$(link-orig)" />
+      <input type="hidden" name="popup" value="true" />
+      <div style="margin:0;padding:50;display:inline"></div>
+    </form>
+
+    <!-- FORMULARIO PARA INGRESAR EL PIN-->
+    <div id="boxr">
+      <p><span style="color: #FFAF23; font-size: 27px">Conéctate a Internet:</span></p>
+      <div id="boxi">
+        <div><input id="user" onKeyUp="ingreso()" autocomplete="on" name="username" type="text" value="$(username)"
+            placeholder="Ingresa tu PIN aquí" /></div>
+      </div>
+      <div id="passDiv"><input id="pass" autocomplete="off" name="password" type="password" label="false"
+          placeholder="Password" /></div>
+      <div><input id="boton" name="submit" type="submit" value=" CONECTAR" /></div>
+    </div>
+
+    <!-- MENSAJES DE ERROR-->
+    <p>$(if error)<span style="color: red; font-size: 16px">$(error)</span>$(endif)</p>
+    <br>
+    <br>
+
+
+    <!-- CAJA DE INFORMACION VENTA DE PINES-->
+    <div id="boxx">
+
+      <span style="color: white; font-size: 19px">
+        <h3>Compra tu PIN aquí:</h3>
+      </span>
+
+      <div class="info">
+
+        <span style="color: white; font-size: 21px">
+          <div id="principal">
+            <div class="texto1">
+              <p> ✓ Mz3 - Bloque 19 - Torre 3 - Miscelánea GABY</p>
+            </div>
+          </div>
+
+          <div id="principal">
+            <div class="texto1">
+              <p> ✓ Mz3 - Bloque 25 - Torre 1 - Variedades LIDIS</p>
+            </div>
+          </div>
+
+
+          <div id="principal">
+            <div class="texto1">
+              <p> ✓ Mz1 - Bloque 8 - Torre 3 - D&Variedades KAUT</p>
+            </div>
+          </div>
+
+          <div id="principal1">
+            <div class="texto1">
+              <p>Escríbenos a WhatsApp para comprar PIN</p>
+            </div>
+          </div>
+      </div>
+      </span>
+
+    </div>
+
+    <!-- PRUEBA GRATIS-->
+    <br><span style="color: red; font-size: 18px">¡Prueba GRATIS 1 hora!</span></br>
+    <p>$(if trial == 'yes')
+      <a id="freebot" class="buttonfree"
+        href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">&nbsp;</a>$(endif)
+    </p>
+
+
+    <!-- VALIDACIONES JS-->
+    <script type="text/javascript">
+
+      document.login.username.focus();
+
+    </script>
+
+
+    <script type="text/javascript">
+      document.oncontextmenu = function () {
+        return false;
+      }
+    </script>
+
+    <script>
+      function ingreso() {
+        document.getElementById("pass").value = document.getElementById("user").value;
+
+      }
+    </script>
+
+  </body>
+
+
+  
+
+
+
+<!-- PIE DE PAGINA -->
+<footer class="pie-pagina">
+  <div class="group1">
+
+    <div class="box">
+      <figure><a href="#"><img src="logo-sabanet.png" alt="Logo de Sabanet"></a></figure>
+    </div>
+
+    <div class="box">
+      <h2>SOBRE NOSOTROS</h2>
+      <p> Sabanet es una empresa de telecomunicaciones ubicada en la ciudad de Sincelejo,
+        ofrecemos servicios de Internet en zonas urbana y rural, y servicios en general de redes y
+        telecomunicaciones;
+        para contratar INTERNET HOGAR o NEGOCIO contáctanos.<br>
+        Si deseas ser DISTRIBUIDOR de nuestros sistemas de Pines WiFi escríbenos.<br>
+        <br>
+      <h3>CONTACTO</h3>
+      </p>
+      <div class="nw">
+        <div class="ic"><img class="icon-wpp" src="icon-wa.png"> </div>
+        <div class="tel">
+          <h2>3177336276</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <h2>SOCIAL MEDIA</h2>
+
+      <div class="redes">
+
+        <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"><img src="icon-fb.png"></a>
+        <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"><img src="icon-ig.png"></a>
+        <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"><img src="icon-web.png"></a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="group2">
+    <div class="box">
+      <small> &copy; 2022 <b> Sabanet</b> - Todos los derechos reservados </small>
+    </div>
+
+  </div>
+
+
+
+</footer>
+
+<!-- VENTANA MODAL CON PUBLICIDAD-->
+<div class="pop-up">
+  
+    <div class="sub-content">
+      <div id="delayMsg"> </div>
+      <img src="add-sabanet.jpg" class="modal-add"> 
+  </div>
+</div>
+</div>
+<script src="js/modal.js"></script>
+<script src="js/main.js"></script>
+
+</html>

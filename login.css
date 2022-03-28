@@ -1,0 +1,495 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+*{
+font-family: 'Monospace', sans-serif;
+}
+
+
+body {
+  padding:0;
+  margin:0 auto;
+  background:linear-gradient(#ffffff, #b8b7b7);
+  position: relative;
+  font-family:arial;
+  
+}
+
+
+.pop-up{
+  background: rgba(48, 48, 48, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-add{
+  
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 550px;
+    height: 550px;
+    align-items: center;
+}
+
+
+
+.sub-content{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 550px;
+  height: 550px;
+  align-items: center;
+  
+}
+#delayMsg{
+  
+  top: 25px; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+  
+}
+
+
+.pop-up.show{
+  visibility: visible;
+}
+
+.pop-up-wrap.show{
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+
+@media only screen and (max-width: 800px){
+  .sub-content{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 550px;
+    height: 550px;
+    align-items: center;
+    
+  }
+  #delayMsg{
+    
+    top: 25px; bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    
+  }
+
+  .modal-add{
+    width:95%;
+    height: 95%;
+}
+
+
+}
+  
+
+
+/*--- BANNER DINAMICO--*/
+.banner{
+  margin: auto;
+  width: 728px;
+  height: 200px;
+  animation: banner 10s infinite;  
+}
+
+@keyframes banner {
+  0%, 30%{
+    background-image: url(Banner1.jpg);
+    opacity: 1;
+  }
+  31%, 34%{
+    opacity: 0,1;
+  }
+  35%, 60%{
+    background-image: url(Banner3.jpg);
+    opacity: 1;
+  }
+  61%, 69%{
+    opacity: 0,1;
+  }
+  70%, 100%{
+    background-image: url(Baner2.jpg);
+    opacity: 1;
+  }
+  100%, 0%{
+    opacity: 0,1;
+  }
+}
+
+@media screen and (max-width:800px) {
+
+  .banner {
+  margin: auto;
+  width: 314px;
+  height: 100px;
+  animation: banner 10s infinite; 
+  }
+  
+  @keyframes banner {
+    0%, 30%{
+      background-image: url(bn1.jpg);
+      opacity: 1;
+    }
+    31%, 34%{
+      opacity: 0,1;
+    }
+    35%, 60%{
+      background-image: url(bn3.jpg);
+      opacity: 1;
+    }
+    61%, 69%{
+      opacity: 0,1;
+    }
+    70%, 100%{
+      background-image: url(bn2.jpg);
+      opacity: 1;
+    }
+    100%, 0%{
+      opacity: 0,1;
+    }
+  }
+}
+
+#head{
+  display: block;
+  background:transparent;
+  width: 100%;
+  height: 180px;
+  z-index: 1;
+}
+.encabezado{
+  
+  margin-top: -160px;
+  color:black;
+  font-family: Arial;
+}
+#logo{
+  
+  top:0px;
+}
+
+legend{
+  
+  top:0px;
+  color:#303f5f;
+  font-size: 20px;
+  font-family:sans-serif;
+
+}
+
+
+#box{
+  
+  top:-175px;
+  width:90%;
+  max-width:650px;
+  height:500px;
+  background-color:#ffffff;
+  border-radius:63px;
+  padding:20px 0 0 0;
+  margin:0px auto;
+  z-index: 2;
+
+}
+
+
+#boxi{
+  
+  width:90%;
+  max-width:400px;
+  height:50px;
+  background-color:#ffffff;
+  border-radius:10px;
+  padding:0px 0 0 0;
+  margin:0px auto;
+  z-index: 2;
+
+
+}
+
+#boxr{
+  
+  width:90%;
+  max-width:650px;
+  background-color:#52658f;
+  border-radius:40px;
+  padding-left:0px;
+  padding-top:0.6%;
+  padding-bottom:1%;
+  margin:1%;
+  margin-top:20px;
+  z-index: 2;
+
+}
+
+#boxx{
+  
+  width:90%;
+  height: 320px;
+  max-width:650px;
+  background-color:#52658f;
+  border-radius:40px;
+  padding-left:0px;
+  padding-top:0.5%;
+  padding-bottom:0.5%;
+  margin:auto;
+  z-index: 2;
+
+
+}
+.info{
+  position: relative;
+  top: -30px;
+  
+  
+}
+.info #principal{
+  display: flex;
+  margin: auto;
+  padding-left: 10%;
+  
+  
+}
+
+#principal1{
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10%;
+  margin: auto;
+
+}
+
+.texto1 {
+width:90%;
+text-align: left;
+height:54px;
+
+}
+
+
+
+#boxxsabanet{
+  
+  width:90%;
+  max-width:650px;
+  border-radius: 63px;
+  padding: 20px 0 0 0;
+  margin: 0px auto;
+  z-index: 2;
+
+}
+
+#boxa{
+  
+  top:-150px;
+  width:90%;
+  max-width:650px;
+  height:355px;
+  background-color:#ffffff;
+  border-radius:0px 0px 63px 63px  ;
+  padding:20px 0 0 0;
+  margin:0px auto;
+  z-index: 2;
+
+
+}
+/**------- LOGO SABANET (ARRIBA)--------**/
+#userdiv
+{
+  background: url('logo-sabanet.png') no-repeat center;
+  width:300px;
+  height: 100px;
+  background-size: 300px 150px;
+  margin: 10px;
+}
+
+/**------------USER------------**/
+#user{
+  border:0px #ccc solid;
+  border-bottom:1px #ccc solid;
+  color:#52658f;
+  background:rgba(255,255,255,0.01);
+  height:40px;font-size:16px;
+  display:block;width:230px;
+  text-align:center;
+  border-radius:0px;
+  font-family:inherit;outline: none;
+}
+/**--------------------PASSWORD----------**/
+#pass{
+  border:0px #ccc solid;
+  border-bottom:1px #ccc solid;
+  color:rgba(248, 248, 248, 0.041);
+  background:#FFF;
+  height:40px;font-size:16px;
+  display:block;
+  margin:5px;
+  width:230px;
+  text-align:center;
+  border-radius:0px;
+  font-family:inherit;
+  outline: none;
+}
+/*-------- BOTON CONECTAR ---------*/
+#boton{
+	-webkit-appearance:none;color:#FFF;
+  
+	background:#FFAF23;
+	background-repeat: no-repeat;
+        background-position:center;
+        opacity: 1;
+    border:none;
+    border-radius:20px;
+    height:42px;
+    width:234px;
+    font-size:16px;
+    font-weight:400;
+    outline:0;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    cursor:pointer;
+    margin-top:8px;
+}
+
+   
+
+/**---   BOTON PRUEBA GRATIS----**/
+#freebot{
+
+    -webkit-appearance:none;color:rgba(255, 255, 255, 0);
+    background:#ff7b00;
+    background-image:url(unlock-clock.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    opacity: 1;
+    border:none;
+    border-radius:20px;
+    height:40px; 
+    width:150px;
+    cursor:pointer;
+    display:inline-block;
+
+}
+#passDiv{
+    display: none
+}
+#customText{
+    max-width: 650px;
+    width:90%;
+    margin: 0px auto;
+}
+
+/**---   PIE DE PAGINA ----**/
+.pie-pagina{
+  width: 100%;
+  
+  background-color: #455881;
+}
+.pie-pagina .group1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .group1 .box h3{
+  text-align: center;
+}
+
+.icon-wpp{
+  display: flex;
+  align-items: left;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  
+  
+  
+}
+.pie-pagina  .group1 .box figure{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina  .group1 .box figure img {
+  width: 250px;
+}
+.nw{
+  display: flex;
+  justify-content: center;
+}
+
+.ic {
+  float: left;
+ 
+}
+.tel {
+  
+  color: #ffffff;
+  float: left;
+  transform: translate(0px, -13px);
+  padding-left: 10px;
+ 
+}
+
+.pie-pagina  .group1 .box p{
+  color: #efefef;
+  margin-bottom: 15px;
+  text-align: justify;
+  
+}
+.pie-pagina  .group1 .redes img{
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.pie-pagina .group2 {
+  width: 100%;
+  height: 40px;
+  text-justify: auto;
+  background-color: rgb(144, 153, 160);
+}
+
+@media screen and (max-width:800px){
+
+  .pie-pagina .group1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .pie-pagina  .group1 .box figure  {
+    display: inline-block;
+    align-items: left;
+    margin: auto;
+    
+  }
+
+}
